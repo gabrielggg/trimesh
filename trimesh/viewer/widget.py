@@ -137,7 +137,8 @@ class SceneWidget(glooey.Widget):
         self.vertex_list = {}
         self.vertex_list_hash = {}
         self.textures = {}
-
+        
+        self.scene.set_camera([1.57, 0, 3.14])
         self._initial_camera_transform = self.scene.camera_transform.copy()
         self.reset_view()
 
